@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/media_enter_add_head"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:background="@drawable/pic_bg"
+        android:layout_marginTop="40px"
+        android:layout_marginLeft="30px"/>
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="40px">
+
+        <TextView
+            android:id="@+id/media_enter_add_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吉珠HAPPY"
+            android:textSize="50px"
+            android:textColor="#2d2d2d"
+            android:layout_marginTop="2px"/>
+        <TextView
+            android:id="@+id/media_enter_add_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="jluzh_CXQ"
+            android:textSize="42px"
+            android:layout_marginTop="75px"
+            android:textColor="#787677"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40px"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:background="@drawable/collect_enter"
+                android:id="@+id/collect"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/collect_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11110"
+                android:layout_below="@+id/collect"
+                android:layout_gravity="center"
+                android:textColor="#787677"/>
+        </LinearLayout>
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="80px"
+            android:layout_marginTop="145px">
+            <ImageView
+                android:layout_width="45px"
+                android:layout_height="45px"
+                android:src="@drawable/icon_fans"
+                android:layout_marginTop="5px"
+                android:id="@+id/subscription_fans_img"/>
+            <TextView
+                android:id="@+id/fans_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 万"
+                android:textSize="43px"
+                android:textColor="#e71f19"
+                android:layout_toEndOf="@+id/subscription_fans_img"
+                android:layout_marginLeft="15px"
+                android:layout_marginTop="3px"/>
+            <ImageView
+                android:layout_width="55px"
+                android:layout_height="55px"
+                android:src="@drawable/icon_look"
+                android:layout_marginLeft="270px"
+                android:id="@+id/subscription_read" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 万"
+                android:textSize="43px"
+                android:textColor="#e71f19"
+                android:layout_marginTop="3px"
+                android:layout_toEndOf="@+id/subscription_read"
+                android:layout_marginLeft="15px"
+                android:id="@+id/look_num"/>
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <ImageView
+            android:id="@+id/media_enter_add_is"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:background="@drawable/icon_verification"
+            android:layout_toEndOf="@+id/media_enter_add_name"
+            android:layout_marginLeft="20.4px"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/media_id"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

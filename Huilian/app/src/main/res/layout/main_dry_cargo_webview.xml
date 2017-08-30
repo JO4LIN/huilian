@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="1100px"
+            android:layout_height="150px"
+            android:id="@+id/task_announcement_label"
+            android:background="#CE020A" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/setting_back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/med_priceTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="干货"
+            android:textColor="#FFFFFF"
+            android:textSize="65px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <WebView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/webView"/>
+</com.zhy.autolayout.AutoLinearLayout>

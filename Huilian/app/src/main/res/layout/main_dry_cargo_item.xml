@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250px"
+        android:background="@drawable/item_selector">
+        <ImageView
+            android:id="@+id/news_head"
+            android:layout_width="210px"
+            android:layout_height="180px"
+            android:background="@drawable/pic_bg"
+            android:layout_marginTop="35px"
+            android:layout_marginLeft="35px"
+            android:scaleType="fitXY"/>
+        <TextView
+            android:id="@+id/news_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="微信团队自媒体"
+            android:textColor="#000205"
+            android:layout_marginLeft="280px"
+            android:layout_marginTop="37px"
+            android:textSize="48px"/>
+        <TextView
+
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-07-08"
+            android:textColor="#97999a"
+            android:layout_marginLeft="282px"
+            android:layout_marginTop="170px"/>
+        <TextView
+            android:id="@+id/news_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新闻"
+            android:textColor="#97999a"
+            android:layout_toRightOf="@+id/news_date"
+            android:layout_marginTop="170px"
+            android:layout_marginLeft="20px"/>
+
+        <TextView
+            android:id="@+id/news_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/news_url"
+            android:visibility="gone"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

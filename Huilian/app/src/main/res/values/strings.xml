@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">汇联</string>
+
+    <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#ff283a</color>
+    <color name="tab_text_normal_color">#000</color>
+    <color name="drawer_arrow_second_color">#303f9f</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="Grey">#BEBEBE</color>
+</resources>

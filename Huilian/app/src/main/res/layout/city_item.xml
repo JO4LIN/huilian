@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/sectionTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="100px"
+        android:gravity="center|left"
+        android:background="#F5F5F5"
+        android:paddingLeft="25px"
+        android:text="A"
+        android:textColor="#9F9F9F"
+        android:textSize="42px"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/infoRowContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="135px"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:paddingLeft="40px" >
+
+        <TextView
+            android:id="@+id/cityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="广州"
+            android:textColor="#202020"
+            android:textSize="45px" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <View style="@style/PersonalLineCity" />
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    android:background="#eeeeee"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:layout_alignParentTop="true"
+        android:background="#ce020a">
+
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/per_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="60px"
+            android:text="个人信息"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40px"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/collect_user"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:background="@drawable/collect_off"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50px"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="8.8">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/personal_top_layout">
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#fbfefe">
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/per_headPortrait"
+                        android:scaleType="fitEnd"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="258px"
+                        android:layout_centerVertical="true"
+                        android:paddingTop="35px"
+                        android:paddingRight="40px"
+                        android:paddingBottom="35px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="34px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="头像" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+
+                    <TextView
+                        android:id="@+id/per_userName"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="170px"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_margin="34px"
+                        android:textSize="50px"
+                        android:textColor="#313030"
+                        android:text="用户名" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_phoneNumber"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#939191"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:paddingRight="40px"
+                        android:text="  "
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="手机号码" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_trueName"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="姓名" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_sex"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="性别" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_telephone"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="固定电话" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_mailbox"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="邮箱" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:id="@+id/per_qqNumber"
+                        android:background="@drawable/selector"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="QQ号" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+                <View style="@style/PersonalLine"
+                    android:layout_width="1020px"
+                    android:layout_gravity="center_horizontal"/>
+
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="170px">
+                    <TextView
+                        android:background="@drawable/selector"
+                        android:id="@+id/per_wechatNumber"
+                        android:clickable="true"
+                        android:gravity="right|center"
+                        android:textColor="#898888"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_centerVertical="true"
+                        android:text="  "
+                        android:paddingRight="40px"
+                        android:textSize="45px" />
+                    <TextView
+                        android:gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:padding="30px"
+                        android:textSize="50px"
+                        android:textColor="#0c0c0c"
+                        android:text="微信号" />
+
+                </com.zhy.autolayout.AutoRelativeLayout>
+
+            </com.zhy.autolayout.AutoLinearLayout>
+
+        </com.zhy.autolayout.AutoLinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/med_chat">
+            <ImageView
+                android:id="@+id/chat_pic"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@drawable/chat"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线聊天"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/chat_pic"
+                android:layout_marginTop="10px"
+                android:textColor="#6a6c6b"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/report">
+            <ImageView
+                android:id="@+id/report_pic"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@drawable/report"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18px"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="举报"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/report_pic"
+                android:layout_marginTop="10px"
+                android:textColor="#6a6c6b"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </LinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="280px"
+        android:layout_height="match_parent">
+        <ExpandableListView
+            android:id="@+id/province_expandablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:childIndicatorLeft="0dp"
+            android:groupIndicator="@null"
+            android:divider="#f7f6f5"
+            android:dividerHeight="1px"
+            android:scrollbarAlwaysDrawHorizontalTrack="true" >
+        </ExpandableListView>
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="30px"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"/>
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/type_school_layout"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:background="#ffffff">
+         <com.shengrui.huilian.refresh_listview.RefreshListView
+             android:id="@+id/typeschool_right_listview"
+             android:layout_width="748px"
+             android:layout_height="wrap_content"
+             android:divider="#ffffff"
+             android:dividerHeight="30px"/>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+    <View
+        android:layout_width="29px"
+        android:layout_height="fill_parent"
+        android:background="#ffffff"/>
+</com.zhy.autolayout.AutoLinearLayout>

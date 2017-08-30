@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="110px"
+    android:background="@color/group_item_pressed_bg"
+    android:orientation="horizontal" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/fans_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15px"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/fans_img"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginRight="12px"
+            android:background="@drawable/icon_to_down" />
+
+        <TextView
+            android:id="@+id/fans_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="粉丝数"
+            android:textColor="@color/tab_text_color" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/reading_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15px"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/reading_img"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginRight="12px"
+            android:background="@drawable/icon_to_down" />
+
+        <TextView
+            android:id="@+id/reading_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="阅读量"
+            android:textColor="@color/tab_text_color" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/price_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15px"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/price_img"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            android:layout_marginRight="12px"
+            android:background="@drawable/icon_to_down" />
+
+        <TextView
+            android:id="@+id/price_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="价格"
+            android:textColor="@color/tab_text_color" />
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/search_layout"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="15px"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_marginLeft="45px"
+            android:layout_width="45px"
+            android:layout_height="42px"
+            android:background="@drawable/search1" />
+        <TextView
+            android:layout_marginLeft="12px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="筛选"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

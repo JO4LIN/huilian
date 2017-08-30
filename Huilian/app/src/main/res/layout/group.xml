@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300px"
+    android:background="@drawable/selector_group"
+    android:gravity="center">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/group"
+            android:layout_marginRight="20px"/>
+        <TextView
+            android:gravity="center"
+            android:id="@+id/group"
+            android:layout_width="wrap_content"
+            android:layout_height="130px"
+            android:text="省份"
+            android:textSize="50px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

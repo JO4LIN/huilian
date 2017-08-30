@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_view"
+    android:background="@drawable/android_layout_bg" >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/personal_top_layout"
+        android:layout_width="1100px"
+        android:layout_height="150px"
+        android:layout_alignParentTop="true"
+        android:background="#ce020a"
+        >
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/per_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="60px"
+            android:text="自媒体信息"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40px"
+            android:layout_marginLeft="390px" />
+
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/personal_top_layout" >
+
+        <ImageView
+            android:id="@+id/personal_background_image"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="520px"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/background_corners" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" >
+            <ScrollView
+                android:id="@+id/personal_scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+                <com.zhy.autolayout.AutoLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="520px"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+                        <ImageView
+                            android:id="@+id/med_mainHead"
+                            android:layout_width="210px"
+                            android:layout_height="210px"
+                            android:scaleType="fitXY"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="58px"
+                            android:clickable="true"
+                            />
+
+                        <TextView
+                            android:id="@+id/med_officialAccounts"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="41px"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:text="自媒体名称"
+                            android:textColor="#202020"
+                            android:textSize="50px"
+                            android:textStyle="bold" />
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            style="@style/PersonalTopStyle">
+                            <ImageView
+                                android:layout_height="51px"
+                                android:layout_width="51px"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="110px"
+                                android:src="@drawable/icon_fans" />
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/med_followers"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="180px"
+                                android:textSize="45px"
+                                android:textColor="#e71f19"
+                                android:text="9999999" />
+                            <ImageView
+                                android:layout_height="51px"
+                                android:layout_width="51px"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="440px"
+                                android:src="@drawable/icon_look" />
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/med_readers"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="510px"
+                                android:textSize="45px"
+                                android:textColor="#e71f19"
+                                android:text="9999999" />
+                            <ImageView
+                                android:layout_height="51px"
+                                android:layout_width="51px"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="780px"
+                                android:src="@drawable/icon_place" />
+                            <TextView
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:id="@+id/med_area"
+                                android:layout_marginTop="54px"
+                                android:layout_marginLeft="850px"
+                                android:textSize="45px"
+                                android:textColor="#e71f19"
+                                android:text="珠海市" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                    <com.zhy.autolayout.AutoLinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bottom_background"
+                        android:orientation="vertical" >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="43px"
+                            android:textColor="#939191"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="34px"
+                            android:layout_marginTop="25.5px"
+                            android:layout_marginBottom="10px"
+                            android:text="基本信息" />
+
+                        <com.zhy.autolayout.AutoLinearLayout style="@style/PersonalMainLayoutStyle" >
+
+                            <com.zhy.autolayout.AutoRelativeLayout style="@style/PersonalTopStyle"
+                                android:layout_height="116px">
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_weixinNumberTitle"
+                                    android:background="@drawable/selector"
+                                    android:text="微信号" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="34px"
+                                    android:id="@+id/med_weixinNumber"
+                                    android:textSize="43px"
+                                    android:textColor="#939191"
+                                    android:text="  " />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout style="@style/PersonalTopStyle"
+                                android:layout_height="116px">
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_codeTitle"
+                                    android:text="二维码" />
+                                <ImageView
+                                    android:id="@+id/med_code"
+                                    android:src="@drawable/code"
+                                    android:scaleType="fitXY"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="34px"
+                                    android:layout_width="40px"
+                                    android:layout_height="40px"
+                                    android:layout_centerVertical="true" />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout style="@style/PersonalTopStyle"
+                                android:layout_height="116px">
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_schoolTitle"
+                                    android:text="院校" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="34px"
+                                    android:textSize="43px"
+                                    android:textColor="#939191"
+                                    android:id="@+id/med_school"
+                                    android:text="  " />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="116px"
+                                android:focusable="true"
+                                android:descendantFocusability="blocksDescendants">
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_sortTitle"
+                                    android:text="类别" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="27px"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="34px"
+                                    android:textSize="43px"
+                                    android:textColor="#939191"
+                                    android:id="@+id/med_sort"
+                                    android:text="  " />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                        </com.zhy.autolayout.AutoLinearLayout>
+
+                        <com.zhy.autolayout.AutoRelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="95px">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="43px"
+                                android:layout_gravity="left"
+                                android:layout_marginLeft="34px"
+                                android:layout_centerVertical="true"
+                                android:textColor="#939191"
+                                android:text="广告报价" />
+                            <TextView
+                                android:layout_width="45px"
+                                android:layout_height="45px"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="340px"
+                                android:background="#0CBB06"
+                                android:textSize="35px"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:layout_centerVertical="true"
+                                android:text="软" />
+                            <TextView
+                                android:layout_width="45px"
+                                android:layout_height="45px"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="68px"
+                                android:layout_centerVertical="true"
+                                android:background="#BE0108"
+                                android:textSize="35px"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                android:text="硬" />
+                        </com.zhy.autolayout.AutoRelativeLayout>
+
+                        <com.zhy.autolayout.AutoLinearLayout style="@style/PersonalMainLayoutStyle"
+                            android:layout_marginTop="0px">
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="116px"
+                                android:focusable="true"
+                                android:descendantFocusability="blocksDescendants">>
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_multiOneTitle"
+                                    android:text="多图文第一条" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiOne"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="320px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiOne2"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="50px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true"
+                                    android:text="  " />
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="116px"
+                                android:focusable="true"
+                                android:descendantFocusability="blocksDescendants">>
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_multiTwoTitle"
+                                    android:text="多图文第二条" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiTwo"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="320px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiTwo2"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="50px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true"
+                                    android:text="  " />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="116px"
+                                android:focusable="true"
+                                android:descendantFocusability="blocksDescendants">>
+                                <TextView
+                                    android:background="@drawable/selector"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_multiOtherTitle"
+                                    android:text="多图文其他位置" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiOther"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="320px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_multiOther2"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="50px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true"
+                                    android:text="  " />
+
+                            </com.zhy.autolayout.AutoRelativeLayout>
+
+                            <View style="@style/PersonalLine" />
+
+                            <com.zhy.autolayout.AutoRelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="116px"
+                                android:focusable="true"
+                                android:descendantFocusability="blocksDescendants">
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="116px"
+                                    android:gravity="center|left"
+                                    android:paddingLeft="34px"
+                                    android:textSize="45px"
+                                    android:textColor="#313030"
+                                    android:id="@+id/med_singleTitle"
+                                    android:text="单图文各位置"
+                                    android:background="@drawable/selector"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_single"
+                                    android:text="  "
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="320px"
+                                    android:textColor="#313030"
+                                    android:layout_centerVertical="true" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="43px"
+                                    android:id="@+id/med_single2"
+                                    android:gravity="center"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginRight="50px"
+                                    android:textColor="#313030"
+                                    android:text="  "
+                                    android:layout_centerVertical="true"/>
+                            </com.zhy.autolayout.AutoRelativeLayout>
+                        </com.zhy.autolayout.AutoLinearLayout>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/small_text_size"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="30px" />
+                    </com.zhy.autolayout.AutoLinearLayout>
+
+
+                </com.zhy.autolayout.AutoLinearLayout></ScrollView>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoRelativeLayout>

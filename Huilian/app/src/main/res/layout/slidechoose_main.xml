@@ -1,0 +1,79 @@
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true">
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/arch_bar_view"
+                layout="@layout/ease_search_bar_with_padding" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#e6e6e6"/>
+            <com.zhy.autolayout.AutoRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <include
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="110px"
+                    layout="@layout/slidechoose_head_tab_layout" />
+                <ListView
+                    android:id="@+id/auto_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#ffffffff" />
+            </com.zhy.autolayout.AutoRelativeLayout>
+
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:id="@+id/choose_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.zhy.autolayout.AutoRelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.shengrui.huilian.refresh_listview.RefreshListView
+                        android:id="@+id/inner_industry_lv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">/</com.shengrui.huilian.refresh_listview.RefreshListView>
+                </com.zhy.autolayout.AutoRelativeLayout>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoFrameLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/right_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="#fff"
+        android:gravity="center_horizontal"
+        android:clickable="true">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/slidechoose_right"
+            android:clickable="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+

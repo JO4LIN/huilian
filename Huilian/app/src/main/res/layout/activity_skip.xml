@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_background"
+    android:orientation="vertical">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="1100px"
+            android:layout_height="150px"
+            android:id="@+id/task_announcement_label"
+            android:background="#CE020A" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/search_back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <TextView
+            android:id="@+id/per_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textColor="#FFFFFF"
+            android:textSize="58px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:clickable="true"
+            android:id="@+id/per_save"
+            android:layout_width="140px"
+            android:layout_height="150px"
+            android:background="@drawable/button_save"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="保存"
+            android:textSize="45px"
+            android:textColor="#FFFFFF"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/personal_top_layout"
+        android:paddingTop="57px"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <EditText
+            android:id="@+id/per_change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="28px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/medium_text_size"
+            android:background="@null"/>
+        <View
+            android:layout_width="900px"
+            android:layout_height="3px"
+            android:background="#c6c5c5"
+            android:gravity="center"/>
+    </com.zhy.autolayout.AutoLinearLayout>
+</com.zhy.autolayout.AutoLinearLayout>

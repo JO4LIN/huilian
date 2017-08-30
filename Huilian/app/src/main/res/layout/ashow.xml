@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="120px"
+            android:gravity="center"
+            android:text="请选择"
+            android:visibility="visible"
+            android:textSize="45px"/>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="hahahaha"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.5"
+                android:minHeight="280px"
+                android:paddingBottom="40px"
+                android:paddingLeft="55px"
+                android:paddingRight="55px"
+                android:paddingTop="40px"
+                android:textSize="60px"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2.0px"
+            android:background="#ffd0d0d0" />
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="170px"
+            android:layout_gravity="bottom"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.zhy.autolayout.AutoLinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="170px">
+            <Button
+                android:id="@+id/positiveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="170px"
+                android:background="@drawable/item_selector"
+                android:gravity="center"
+                android:text="确定"
+                android:layout_weight="1"
+                android:textSize="50px"/>
+
+                <View
+                    android:layout_width="2px"
+                    android:layout_height="170px"
+                    android:background="#dcdcdc"/>
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="170px"
+                android:background="@drawable/item_selector"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_weight="1"
+                android:textSize="50px"/>
+            </com.zhy.autolayout.AutoLinearLayout>
+        </com.zhy.autolayout.AutoLinearLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+
+</com.zhy.autolayout.AutoFrameLayout>

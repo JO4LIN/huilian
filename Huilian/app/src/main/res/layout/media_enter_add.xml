@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="150px"
+            android:id="@+id/task_announcement_label"
+            android:background="#CE020A" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="入驻的自媒体"
+            android:textColor="#FFFFFF"
+            android:textSize="55px"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/media_add"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:text="+"
+            android:textSize="80px"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/back_click"
+            android:clickable="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:id="@+id/init_task"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/init_pic_task"
+            android:layout_width="530px"
+            android:layout_height="530px"
+            android:background="@drawable/init_pic"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="没有入驻的自媒体！"
+            android:textColor="#767676"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/init_pic_task"
+            android:textSize="55px"
+            android:layout_marginTop="50px"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/media_enter_add_listview"/>
+
+</com.zhy.autolayout.AutoLinearLayout>

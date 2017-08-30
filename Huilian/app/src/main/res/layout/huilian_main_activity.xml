@@ -1,0 +1,38 @@
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- The main content view -->
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include layout="@layout/huilian_main" />
+        </com.zhy.autolayout.AutoFrameLayout>
+
+        <!-- The navigation drawer -->
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:choiceMode="singleChoice"
+            android:background="#ffffff">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/layout_menu"
+                android:clickable="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </android.support.v4.widget.DrawerLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

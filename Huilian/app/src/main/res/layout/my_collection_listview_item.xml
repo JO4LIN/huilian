@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1085px"
+        android:layout_height="250px"
+        android:background="@drawable/item_selector">
+        <ImageView
+            android:id="@+id/my_collection_head"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:layout_marginLeft="50px"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/my_collection_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吉林大学"
+            android:textSize="55px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="240px"
+            android:textColor="#090806"/>
+        <TextView
+            android:id="@+id/my_collection_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/code_pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/btn_code"
+            android:padding="25dp"
+            android:src="@drawable/jilin"
+            android:scaleType="fitXY"
+            android:background="@drawable/background_photo"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+        />
+
+        <Button
+            android:id="@+id/btn_take_code"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_photo"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="更改二维码"
+            android:textColor="#0e61aa"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150px"
+        android:id="@+id/enter_region">
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_place" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前定位到："
+                android:layout_gravity="center_vertical"
+                android:textColor="#3e3e3e"/>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   "
+                android:layout_marginLeft="10px"
+                android:layout_gravity="center_vertical"
+                android:textSize="42px"
+                android:textColor="#2e2e2e"/>
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（点击选择其他地区）"
+            android:layout_marginRight="50px"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout"
+            android:textSize="32px"
+            android:textColor="#494949"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#dcdcdc"/>
+    <com.shengrui.huilian.refresh_listview.RefreshListView
+        android:id="@+id/region_listView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        >
+    </com.shengrui.huilian.refresh_listview.RefreshListView>
+
+</com.zhy.autolayout.AutoLinearLayout>

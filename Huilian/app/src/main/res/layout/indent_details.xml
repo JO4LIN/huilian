@@ -1,0 +1,145 @@
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="1100px"
+            android:layout_height="150px"
+            android:id="@+id/task_announcement_label"
+            android:background="#CE020A" />
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:id="@+id/my_task_back"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:background="@drawable/back_click">
+            <ImageView
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/icon_to_left"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单详情"
+            android:textColor="#FFFFFF"
+            android:textSize="55px"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:id="@+id/id_switch_tab_ll"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:orientation="horizontal"
+        android:baselineAligned="false"
+        android:background="#ffffff">
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/layoutone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="28px" >
+
+            <TextView
+                android:id="@+id/tvone"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center"
+                android:text="待接单"
+                android:textColor="#e71f19"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/layoutwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="28px"
+            android:saveEnabled="false" >
+
+            <TextView
+                android:id="@+id/tvtwo"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center"
+                android:text="进行中"
+                android:textColor="#858484"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="28px" >
+
+            <TextView
+                android:id="@+id/tvthree"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="#858484"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+        <com.zhy.autolayout.AutoLinearLayout
+            android:id="@+id/layoutfour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="28px" >
+
+            <TextView
+                android:id="@+id/tvfour"
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:gravity="center"
+                android:text="失败"
+                android:textColor="#858484"
+                android:textSize="45px" />
+        </com.zhy.autolayout.AutoLinearLayout>
+
+    </com.zhy.autolayout.AutoLinearLayout>
+
+    <ImageView
+        android:id="@+id/id_tab_line_iv"
+        android:layout_width="270px"
+        android:layout_height="8px"
+        android:contentDescription="tab"
+        android:background="@drawable/tab_selected_pressed_holo" >
+    </ImageView>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#efefef"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_page_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+
+</com.zhy.autolayout.AutoLinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="1110px"
+        android:layout_height="299.2px"
+        android:background="@drawable/item_selector">
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="221px"
+            android:layout_height="221px"
+            android:layout_marginTop="37.4px"
+            android:layout_marginLeft="34px">
+            <ImageView
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_bg"
+                android:id="@+id/media_pic"
+                android:scaleType="fitXY"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:textColor="#2d2d2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="吉林大学订阅号"
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="290px"
+            android:id="@+id/media_name"
+            android:textSize="50px" />
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/icon_verification"
+            android:layout_toEndOf="@+id/media_name"
+            android:layout_marginTop="48px"
+            android:layout_marginLeft="20.4px"
+            android:id="@+id/subscription_verification" />
+        <ImageView
+            android:layout_width="50px"
+            android:layout_height="50px"
+            android:src="@drawable/icon_fans"
+            android:layout_marginTop="193px"
+            android:layout_marginLeft="295px"
+            android:id="@+id/subscription_fans_img"/>
+        <TextView
+            android:id="@+id/media_fansnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 万"
+            android:textSize="46px"
+            android:textColor="#e71f19"
+            android:layout_marginTop="192px"
+            android:layout_toEndOf="@+id/subscription_fans_img"
+            android:layout_marginLeft="15px"/>
+        <ImageView
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/icon_look"
+            android:layout_marginTop="190px"
+            android:layout_marginLeft="520px"
+            android:id="@+id/subscription_read" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 万"
+            android:textSize="46px"
+            android:textColor="#e71f19"
+            android:layout_marginTop="192px"
+            android:layout_toEndOf="@+id/subscription_read"
+            android:layout_marginLeft="15px"
+            android:id="@+id/media_readingnum"/>
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="270px"
+            android:layout_height="74.8px"
+            android:layout_marginTop="40px"
+            android:layout_below="@+id/media_name"
+            android:background="@drawable/subscription_price"
+            android:layout_marginLeft="860px">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥"
+                android:textColor="#ED645B"
+                android:textSize="45px"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="25px"/>
+            <TextView
+                android:id="@+id/subscription_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50000"
+                android:layout_marginTop="10px"
+                android:layout_marginLeft="70px"
+                android:textColor="#ED645B"
+                android:textSize="45px"/>
+        </com.zhy.autolayout.AutoRelativeLayout>
+        <TextView
+            android:id="@+id/media_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone"
+            android:layout_alignTop="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>

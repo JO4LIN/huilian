@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#CE020A</color>
+    <color name="colorPrimaryDark">#CE020A</color>
+    <color name="colorAccent">#CE020A</color>
+
+    <color name="slategray">#c9dedb</color>
+    <color name="one">#ce020a</color>
+    <color name="normal">#ffbf28</color>
+    <color name="pressed">#e60909</color>
+    <color name="img_normal">#141414</color>
+    <color name="img_pressed">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="hui">#858484</color>
+</resources>

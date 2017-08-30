@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!-- ListView的头部 -->
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <!-- 内容 -->
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/head_contentLayout">
+
+        <!-- 提示、最近更新 -->
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <!-- 提示 -->
+            <ProgressBar
+                android:layout_width="60px"
+                android:layout_height="60px"
+                android:indeterminateDrawable="@drawable/common_progressbar" />
+
+            <!-- 最近更新 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25px"
+                android:text="加载更多..."
+                android:textSize="50px" />
+
+        </com.zhy.autolayout.AutoLinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"></View>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</com.zhy.autolayout.AutoLinearLayout>
